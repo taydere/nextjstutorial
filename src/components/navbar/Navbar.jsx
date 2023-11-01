@@ -14,22 +14,22 @@ const links = [
   },
   {
     id: 2,
-    title: "Portfolio",
+    title: "Math",
     url: "/portfolio",
   },
   {
     id: 3,
-    title: "Blog",
+    title: "Computer Science",
     url: "/blog",
   },
   {
     id: 4,
-    title: "About",
+    title: "Electrical Engineering",
     url: "/about",
   },
   {
     id: 5,
-    title: "Contact",
+    title: "Business",
     url: "/contact",
   },
   {
@@ -45,11 +45,11 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        lamamia
+        Everything Hub
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />
-        {links.map((link) => (
+        {links.map((link) => (                                                        //maps to the links array above
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
